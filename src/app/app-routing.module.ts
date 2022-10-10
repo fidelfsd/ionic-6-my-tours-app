@@ -4,36 +4,32 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'favorites',
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
-  },
-  {
     path: 'favorites',
-    loadChildren: () => import('./pages/favorites/favorites.module').then( m => m.FavoritesPageModule)
+    loadChildren: () => import('./pages/favorites/favorites.module').then(m => m.FavoritesPageModule)
   },
   {
     path: 'regions',
-    loadChildren: () => import('./pages/regions/regions.module').then( m => m.RegionsPageModule)
+    loadChildren: () => import('./pages/regions/regions.module').then(m => m.RegionsPageModule)
   },
   {
     path: 'tour-types',
-    loadChildren: () => import('./pages/tour-types/tour-types.module').then( m => m.TourTypesPageModule)
+    loadChildren: () => import('./pages/tour-types/tour-types.module').then(m => m.TourTypesPageModule)
   },
   {
     path: 'list',
-    loadChildren: () => import('./pages/list/list.module').then( m => m.ListPageModule)
+    loadChildren: () => import('./pages/list/list.module').then(m => m.ListPageModule)
   },
   {
     path: 'details',
-    loadChildren: () => import('./pages/details/details.module').then( m => m.DetailsPageModule)
+    loadChildren: () => import('./pages/details/details.module').then(m => m.DetailsPageModule)
   },
   {
     path: 'request',
-    loadChildren: () => import('./pages/request/request.module').then( m => m.RequestPageModule)
+    loadChildren: () => import('./pages/request/request.module').then(m => m.RequestPageModule)
   }
 ];
 
@@ -43,4 +39,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

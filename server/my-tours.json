@@ -1,0 +1,461 @@
+{
+  "Regions": [
+    {
+      "ID": "BN",
+      "Icon": "home",
+      "Name": "Bonn City"
+    },
+    {
+      "ID": "SA",
+      "Icon": "rose",
+      "Name": "Bonn's Surrounding Areas"
+    },
+    {
+      "ID": "SM",
+      "Icon": "ios-analytics",
+      "Name": "The Seven Montains"
+    }
+  ],
+  "Tours": [
+    {
+      "Description": "Get an exciting overview of the main sights of Bonn city center: Münster-Basilika, Beethoven's Birthplace, Elector's Residence, Altes Rathaus.",
+      "Duration": 60,
+      "ID": 1,
+      "Image": "city.jpg",
+      "MaxPersons": 25,
+      "PriceF": 110,
+      "PriceG": 90,
+      "Region": "BN",
+      "StartingPoint": {
+        "Lat": "50.735027",
+        "Lng": "7.103140",
+        "Location": "Markt 2, 53111 Bonn"
+      },
+      "Title": "Round Trip Bonn",
+      "Tourtype": "RO"
+    },
+    {
+      "Description": "See a lot in a short time! Get an exciting overview of Bonn's most important sights: Münster-Basilika, Kurfürstenresidenz, former government quarter and museum mile. Your group does not have its own bus? We will organize one!",
+      "Duration": 60,
+      "ID": 2,
+      "Image": "bob-bus.jpg",
+      "MaxPersons": 100,
+      "PriceF": 90,
+      "PriceG": 80,
+      "Region": "BN",
+      "StartingPoint": {
+        "Lat": "50.731822",
+        "Lng": "7.099564",
+        "Location": "Zentraler Omnibus-Bahnhof, 53111 Bonn"
+      },
+      "Title": "Bus Trip Bonn",
+      "Tourtype": "BU"
+    },
+    {
+      "Description": "Let yourself be led through the former plenary hall of the German Bundestag and the Alte Wasserwerk, locations where the history of the young Federal Republic was written.",
+      "Duration": 60,
+      "ID": 3,
+      "Image": "bundestag.jpg",
+      "MaxPersons": 25,
+      "PriceF": 150,
+      "PriceG": 120,
+      "Region": "BN",
+      "StartingPoint": {
+        "Lat": "50.719129",
+        "Lng": "7.123502",
+        "Location": "Platz der vereinten Nationen, 53113 Bonn"
+      },
+      "Title": "Former German Bundestag",
+      "Tourtype": "RO"
+    },
+    {
+      "Description": "Opened in 2015 for the 39th World Conference of World Heritage, the WCCB will impress you with its modern architecture and function rooms for up to 5,000 guests.",
+      "Duration": 45,
+      "ID": 4,
+      "Image": "wccb.jpg",
+      "MaxPersons": 25,
+      "PriceF": 150,
+      "PriceG": 120,
+      "Region": "BN",
+      "StartingPoint": {
+        "Lat": "50.719129",
+        "Lng": "7.123502",
+        "Location": "Platz der Vereinten Nationen, 53113 Bonn"
+      },
+      "Title": "World Conference Center Bonn",
+      "Tourtype": "RO"
+    },
+    {
+      "Description": "Ludwig van Beethoven, born in 1770 in Bonngasse 20, the son of a family of musicians, is the most famous son of Bonn. During this tour you will experience all kinds of exciting things from the life of this musical genius.",
+      "Duration": 60,
+      "ID": 5,
+      "Image": "beethoven.jpg",
+      "MaxPersons": 25,
+      "PriceF": 95,
+      "PriceG": 80,
+      "Region": "BN",
+      "StartingPoint": {
+        "Lat": "50.736827",
+        "Lng": "7.101130",
+        "Location": "Bonngasse 20, 53111 Bonn"
+      },
+      "Title": "In the Footsteps of Beethoven",
+      "Tourtype": "RO"
+    },
+    {
+      "Description": "\"What Versailles is for Paris, that's Bad Godesberg for the federal city of Bonn.\" Get a \"little introduction to diplomacy\" on this 1½-hour tour of the residential area of Bad Godesberg.",
+      "Duration": 90,
+      "ID": 6,
+      "Image": "villenviertel.jpg",
+      "MaxPersons": 25,
+      "PriceF": 180,
+      "PriceG": 150,
+      "Region": "BN",
+      "StartingPoint": {
+        "Lat": "50.687360",
+        "Lng": "7.158042",
+        "Location": "Königsplatz 2, 53173 Bonn"
+      },
+      "Title": "Bonn's Embassies and Residences",
+      "Tourtype": "BI"
+    },
+    {
+      "Description": "From the commercial area to connoisseurs oasis. The changes in the times are visible in the Bonn arch: the old cement factory comes to life again on an external tour of the remaining buildings (office, director's villa, raw mill). Right next door: The futuristic Kameha Grand Hotel, which we will look at from different perspectives and which is not only worth a visit to the bar ...",
+      "Duration": 60,
+      "ID": 7,
+      "Image": "bonner-bogen.jpg",
+      "MaxPersons": 25,
+      "PriceF": 110,
+      "PriceG": 90,
+      "Region": "SA",
+      "StartingPoint": {
+        "Lat": "50.717854",
+        "Lng": "7.153577",
+        "Location": "Joseph-Schumpeter-Allee 1, 53227 Bonn"
+      },
+      "Title": "Bonn's Bow",
+      "Tourtype": "RO"
+    },
+    {
+      "Description": "The Rhineland has an incredible number of churches and chapels, each of which tells its own story. Experience the varied art history of sacral buildings from several centuries. For church lovers and architecture enthusiasts a must.",
+      "Duration": 120,
+      "ID": 8,
+      "Image": "bonn-kirche.jpg",
+      "MaxPersons": 20,
+      "PriceF": 200,
+      "PriceG": 170,
+      "Region": "SA",
+      "StartingPoint": {
+        "Lat": "50.734292",
+        "Lng": "7.103111",
+        "Location": "An der Schlosskirche, 53113 Bonn"
+      },
+      "Title": "Churches in and around Bonn",
+      "Tourtype": "BI"
+    },
+    {
+      "Description": "In Rhöndorf near Bonn, the first German Chancellor Konrad Adenauer lived during his Bonn reign and thereafter until his death in 1967. Visit the former residential building Adenauer, which today is a memorial and makes an important contribution to understanding the emergence of the Federal Republic of Germany.",
+      "Duration": 60,
+      "ID": 9,
+      "Image": "konrad-adenauer-haus.jpg",
+      "MaxPersons": 25,
+      "PriceF": 95,
+      "PriceG": 80,
+      "Region": "SA",
+      "StartingPoint": {
+        "Lat": "50.657700",
+        "Lng": "7.217970",
+        "Location": "Stiftung Bundeskanzler-Adenauer-Haus, 53604 Königswinter-Rhöndorf"
+      },
+      "Title": "Konrad Adenauer House",
+      "Tourtype": "RO"
+    },
+    {
+      "Description": "A hike into the vineyards on the Drachenfels offers the opportunity to experience a wine landscape in its own rhythm. So you can approach culture and people, looking for the best wine products of a scenic area.",
+      "Duration": 60,
+      "ID": 10,
+      "Image": "weinberg.jpg",
+      "MaxPersons": 25,
+      "PriceF": 110,
+      "PriceG": 80,
+      "Region": "SM",
+      "StartingPoint": {
+        "Lat": "50.671350",
+        "Lng": "7.194076",
+        "Location": "Maritimhotel, 53639 Königswinter"
+      },
+      "Title": "Wine Walk",
+      "Tourtype": "HI"
+    },
+    {
+      "Description": "A hike to three of the seven mountains of the Siebengebirge promises to be a very special experience. Learn a lot about colonization, castles, geology, nature and of course the Rhine and its legends.",
+      "Duration": 180,
+      "ID": 11,
+      "Image": "siebengebirge.jpg",
+      "MaxPersons": 25,
+      "PriceF": 200,
+      "PriceG": 160,
+      "Region": "SM",
+      "StartingPoint": {
+        "Lat": "50.673701",
+        "Lng": "7.198892",
+        "Location": "Drachenfelsstraße 59, 53639 Königswinter"
+      },
+      "Title": "The Seven Mountains",
+      "Tourtype": "HI"
+    },
+    {
+      "Description": "At just 330m above sea level, the Steigenberger Grandhotel is majestically situated on Peters Mountain (Petersberg). But not only the fantastic location and the fantastic view of Bonn speak for a visit to the guest house of the Federal Republic. The building, which was renovated from 1985-1990, is a location where history was written.",
+      "Duration": 60,
+      "ID": 12,
+      "Image": "petersberg.jpg",
+      "MaxPersons": 25,
+      "PriceF": 120,
+      "PriceG": 100,
+      "Region": "SM",
+      "StartingPoint": {
+        "Lat": "50.685952",
+        "Lng": "7.207554",
+        "Location": "Steigenberger Grandhotel Petersberg, 53639 Königswinter"
+      },
+      "Title": "Peters Mountain",
+      "Tourtype": "RO"
+    },
+    {
+      "Description": "From Monday to Friday, between 9:30 and 12:00, the second office of the Federal President is available for groups of visitors. Get to know the attractive representation rooms during a walk-through. We point out that the visit of the Villa Hammerschmidt in short-term use by the Federal President, his staff or increased safety requirements in individual cases omitted or can be carried out only to a limited extent.",
+      "Duration": 60,
+      "ID": 13,
+      "Image": "villa-hammerschmidt.jpg",
+      "MaxPersons": 25,
+      "PriceF": 100,
+      "PriceG": 80,
+      "Region": "BN",
+      "StartingPoint": {
+        "Lat": "50.722800",
+        "Lng": "7.117340",
+        "Location": "Adenauerallee 135, 53113 Bonn"
+      },
+      "Title": "Villa Hammerschmidt",
+      "Tourtype": "RO"
+    },
+    {
+      "Description": "If you are a real hiker in the Seven Mountains (Siebengebirge) looking for an alternative to the main season often overcrowded main roads, is just right: About the delightful Nachtigallental at Königswinter we venture up into the Siebengebirge to Drachenfels, Ostermann monument, on to Milchhäuschen and Petersberg, down over the Bittweg back to Königswinter (10 km).",
+      "Duration": 180,
+      "ID": 14,
+      "Image": "drachenfels.jpg",
+      "MaxPersons": 25,
+      "PriceF": 200,
+      "PriceG": 160,
+      "Region": "SM",
+      "StartingPoint": {
+        "Lat": "50.678638",
+        "Lng": "7.193592",
+        "Location": "Bahnhof, 53639 Königswinter"
+      },
+      "Title": "Hike through the Nightingale Valley",
+      "Tourtype": "HI"
+    },
+    {
+      "Description": "On this tour, you go on a journey through time around the Christmas market in Bonn to learn all sorts of interesting facts and curiosities about the Advent season. Old walls, fragrant spices, candlelight ... all this will give us an extraordinary Christmas spirit! During the tour, we enter a café in the city center.",
+      "Duration": 90,
+      "ID": 15,
+      "Image": "weihnachtsmarkt.jpg",
+      "MaxPersons": 25,
+      "PriceF": 180,
+      "PriceG": 130,
+      "Region": "BN",
+      "StartingPoint": {
+        "Lat": "50.732784",
+        "Lng": "7.101429",
+        "Location": "Am Neutor 2, 53113 Bonn"
+      },
+      "Title": "Nostalgic Christmas Tour",
+      "Tourtype": "RO"
+    },
+    {
+      "Description": "As part of a city tour of the more than 2000-year history of Königswinter, we would like to inform you entertaining. We will guide you through the picturesque streets, ornately designed houses or monuments.We will also give you an insight into Rhenish lifestyle and customs, leisure tips for the surrounding area as well as information on more hidden \"treasures\" round off the program.",
+      "Duration": 60,
+      "ID": 16,
+      "Image": "koenigswinter.jpg",
+      "MaxPersons": 25,
+      "PriceF": 110,
+      "PriceG": 80,
+      "Region": "SA",
+      "StartingPoint": {
+        "Lat": "50.674285",
+        "Lng": "7.192644",
+        "Location": "Kellerstraße 12, 53639 Königswinter"
+      },
+      "Title": "Königswinter",
+      "Tourtype": "RO"
+    },
+    {
+      "Description": "Between the picturesque half-timbered houses, discover interesting references to prehistory and the Middle Ages in the colorful city on the Rhine. Spoil yourself in the torture chamber of the castle and marvel at the glassblowers in the Roman glassworks while practicing their fascinating traditional crafts.",
+      "Duration": 60,
+      "ID": 17,
+      "Image": "linz-stadt.jpg",
+      "MaxPersons": 25,
+      "PriceF": 110,
+      "PriceG": 80,
+      "Region": "SA",
+      "StartingPoint": {
+        "Lat": "50.566090",
+        "Lng": "7.278660",
+        "Location": "Burgplatz 4, 53545 Linz"
+      },
+      "Title": "Linz, the colorful City on the Rhine",
+      "Tourtype": "SE"
+    },
+    {
+      "Description": "This beautiful bike ride along the Rhine takes us 19 km off the roads from Königswinter via Rhöndorf, Bad Honnef, Unkel and Erpel to Linz. At various stations we make a stop and learn interesting things about the country, people and life on the Rhine.",
+      "Duration": 240,
+      "ID": 18,
+      "Image": "bonn-rad.jpg",
+      "MaxPersons": 40,
+      "PriceF": 200,
+      "PriceG": 170,
+      "Region": "SA",
+      "StartingPoint": {
+        "Lat": "50.673704",
+        "Lng": "7.198888",
+        "Location": "Drachenfelsstraße 59, 53639 Könisgwinter"
+      },
+      "Title": "Rhine Cycling Tour",
+      "Tourtype": "BI"
+    },
+    {
+      "Description": "This beautiful Segwaytour along the Rhine leads us 9 km off the roads from Königswinter via Rhöndorf to Bad Honnef. At various stations we make a stop and learn interesting things about the country, people and life on the Rhine.",
+      "Duration": 240,
+      "ID": 19,
+      "Image": "posttower-am-abend.jpg",
+      "MaxPersons": 25,
+      "PriceF": 200,
+      "PriceG": 170,
+      "Region": "SA",
+      "StartingPoint": {
+        "Lat": "50.673704",
+        "Lng": "7.198888",
+        "Location": "Drachenfelsstraße 59, 53639 Könisgwinter"
+      },
+      "Title": "Rhine Segway Tour",
+      "Tourtype": "SE"
+    },
+    {
+      "Description": "Immerse yourself in the world of contemporary art with changing exhibitions around the works of Hans Arp and Sophie Taeuber-Arp. You will also find works from the Middle Ages to the Modern Age here (UNICEF Collection Rau). A fantastic museum with wonderful architecture. Following the tour, there is also the opportunity to visit the Sculpture Remagen.",
+      "Duration": 60,
+      "ID": 20,
+      "Image": "arp.jpg",
+      "MaxPersons": 25,
+      "PriceF": 110,
+      "PriceG": 80,
+      "Region": "SA",
+      "StartingPoint": {
+        "Lat": "50.631734",
+        "Lng": "7.207383",
+        "Location": "Oskar-Kokoschka-Platz, 53424 Remagen"
+      },
+      "Title": "Arp Museum Railway Station Rolandseck",
+      "Tourtype": "RO"
+    },
+    {
+      "Description": "This beautiful boat trip over the Rhine takes us from Bonn via Bad Godesberg, Könisgwinter, Bad Honnef, Rolandseck, Unkel and Remagen to Linz and back again. You will learn interesting facts about the country, people and life on the Rhine.",
+      "Duration": 240,
+      "ID": 21,
+      "Image": "bonn-rhein-schiff.jpg",
+      "MaxPersons": 200,
+      "PriceF": 450,
+      "PriceG": 400,
+      "Region": "SA",
+      "StartingPoint": {
+        "Lat": "50.734462",
+        "Lng": "7.108791",
+        "Location": "Brassertufer, 53113 Bonn"
+      },
+      "Title": "The Rhine between Bonn and Linz",
+      "Tourtype": "BO"
+    },
+    {
+      "Description": "This beautiful boat trip over the Rhine takes us from Bonn to Cologne and back again. You will learn interesting facts about the country, people and life on the Rhine.",
+      "Duration": 240,
+      "ID": 22,
+      "Image": "koeln.jpg",
+      "MaxPersons": 80,
+      "PriceF": 280,
+      "PriceG": 240,
+      "Region": "SA",
+      "StartingPoint": {
+        "Lat": "50.734462",
+        "Lng": "7.108791",
+        "Location": "Brassertufer, 53113 Bonn"
+      },
+      "Title": "Rhineland City Tour from Bonn to Cologne",
+      "Tourtype": "BO"
+    },
+    {
+      "Description": "The Rheinische Friedrich-Wilhelms-Universität Bonn is one of the great traditional universities in Germany. The tour will take you through the most important university spaces, including the Blue Grotto. In addition, walk through the portico and have the opportunity to take a look in the large auditorium - provided that dLocation not just an event takes place. The tour concludes with a visit to the Uni-Museum, which was opened in mid-2013 and is currently one of only four museums of its kind in Germany.",
+      "Duration": 120,
+      "ID": 23,
+      "Image": "universitaet.jpg",
+      "MaxPersons": 20,
+      "PriceF": 150,
+      "PriceG": 120,
+      "Region": "BN",
+      "StartingPoint": {
+        "Lat": "50.734206",
+        "Lng": "7.104002",
+        "Location": "Uni Bonn, Regina-Pacis-Weg 3, 53113 Bonn"
+      },
+      "Title": "University of Bonn",
+      "Tourtype": "RO"
+    },
+    {
+      "Description": "The tour leads through the south of Bonn with its almost completely preserved residential area in the beautiful architectural style of historicism from the Wilhelminian era. The district is still today a reflection of the rising prosperity of Bonn in the 19th century. On display is the adjoining Poppelsdorfer Schloss with its moat from electoral time (only outside visits).",
+      "Duration": 120,
+      "ID": 24,
+      "Image": "poppelsdorfer-schloss.jpg",
+      "MaxPersons": 25,
+      "PriceF": 126,
+      "PriceG": "96",
+      "Region": "SA",
+      "StartingPoint": {
+        "Lat": "50.724580",
+        "Lng": "7.090910",
+        "Location": "Meckenheimer Allee 171, 53115 Bonn"
+      },
+      "Title": "South of Bonn around the Poppelsdorf Castle",
+      "Tourtype": "SE"
+    }
+  ],
+  "Tourtypes": [
+    {
+      "ID": "SE",
+      "Icon": "logo-skype",
+      "Name": "Segway Tours"
+    },
+    {
+      "ID": "BI",
+      "Icon": "bicycle",
+      "Name": "Bicycle Tours"
+    },
+    {
+      "ID": "RO",
+      "Icon": "refresh-circle",
+      "Name": "Round Trips"
+    },
+    {
+      "ID": "BU",
+      "Icon": "bus",
+      "Name": "Bus Trips"
+    },
+    {
+      "ID": "BO",
+      "Icon": "boat",
+      "Name": "Boat Trips"
+    },
+    {
+      "ID": "HI",
+      "Icon": "walk",
+      "Name": "Hiking Tours"
+    }
+  ]
+}
