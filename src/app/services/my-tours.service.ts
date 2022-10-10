@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import * as _ from 'lodash';
 
 @Injectable({
   providedIn: 'root'
@@ -25,7 +26,7 @@ export class MyToursService {
 
     this.getTourTypes().subscribe({
       next: data => {
-        this.tourtypes = data;
+        this.tourtypes = _.sortBy(data, 'Name');
       },
       error: err => {
         console.error(err);
