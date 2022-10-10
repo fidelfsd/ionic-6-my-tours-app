@@ -10,7 +10,12 @@
 <ion-content class="ion-padding">
 
   <ion-list>
-    <ion-item *ngFor="let tourtype of tourtypes">
+    <ion-item *ngFor="let tourtype of tourtypes" [routerLink]="['/list',
+    {
+     Category: 'Tourtype',
+     Criteria: tourtype.ID,
+     Name: tourtype.Name
+    }]">
       {{tourtype.Name}}
     </ion-item>
   </ion-list>

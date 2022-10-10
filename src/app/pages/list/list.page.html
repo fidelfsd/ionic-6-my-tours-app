@@ -10,7 +10,7 @@
 <ion-content class="ion-padding">
 
   <ion-list>
-    <ion-item *ngFor="let tour of tours">
+    <ion-item *ngFor="let tour of tours" [routerLink]="['/details/', tour.ID]">
       {{tour.Title}}
     </ion-item>
   </ion-list>
