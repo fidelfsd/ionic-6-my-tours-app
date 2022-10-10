@@ -11,6 +11,7 @@ export class MyToursService {
 
   public regions: any;
   public tourtypes: any;
+  public tours: any;
 
   constructor(private http: HttpClient) { }
 
@@ -33,6 +34,16 @@ export class MyToursService {
       }
     });
 
+    this.getTours().subscribe({
+      next: data => {
+        this.tours = _.sortBy(data, 'Title');
+      },
+      error: err => {
+        console.error(err);
+      }
+    });
+
+
   }
 
   getRegions(): Observable<any> {
@@ -44,4 +55,10 @@ export class MyToursService {
     const requestUrl = `${environment.baseUrl}/Tourtypes`;
     return this.http.get<any>(requestUrl);
   }
+
+  getTours(): Observable<any> {
+    const requestUrl = `${environment.baseUrl}/Tours`;
+    return this.http.get<any>(requestUrl);
+  }
+
 }
