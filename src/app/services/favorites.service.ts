@@ -32,11 +32,10 @@ export class FavoritesService {
     this.favTours.push(tour);
 
     window.localStorage.setItem(this.favKey, JSON.stringify(this.favIDs));
-
   }
 
   remove(tour) {
-    // TODO: implemnetar
+    // TODO: implementar
   }
 
 
