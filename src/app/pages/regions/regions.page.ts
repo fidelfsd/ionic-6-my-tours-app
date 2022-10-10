@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MyToursService } from 'src/app/services/my-tours.service';
+
 
 @Component({
   selector: 'app-regions',
@@ -7,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegionsPage implements OnInit {
 
-  constructor() { }
+  regions: any;
+
+  constructor(private mtService: MyToursService) { }
 
   ngOnInit() {
+    this.getRegions();
+  }
+
+  getRegions() {
+    this.mtService.getRegions().subscribe({
+      next: data => {
+        this.regions = data;
+        // console.log(data);  TODO:
+      },
+      error: err => {
+        console.error(err);
+      }
+    });
   }
 
 }
