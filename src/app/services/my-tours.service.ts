@@ -9,6 +9,7 @@ import { environment } from 'src/environments/environment';
 export class MyToursService {
 
   public regions: any;
+  public tourtypes: any;
 
   constructor(private http: HttpClient) { }
 
@@ -21,10 +22,25 @@ export class MyToursService {
         console.error(err);
       }
     });
+
+    this.getTourTypes().subscribe({
+      next: data => {
+        this.tourtypes = data;
+      },
+      error: err => {
+        console.error(err);
+      }
+    });
+
   }
 
   getRegions(): Observable<any> {
     const requestUrl = `${environment.baseUrl}/Regions`;
+    return this.http.get<any>(requestUrl);
+  }
+
+  getTourTypes(): Observable<any> {
+    const requestUrl = `${environment.baseUrl}/Tourtypes`;
     return this.http.get<any>(requestUrl);
   }
 }

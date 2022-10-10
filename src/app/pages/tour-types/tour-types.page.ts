@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MyToursService } from 'src/app/services/my-tours.service';
 
 @Component({
   selector: 'app-tour-types',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TourTypesPage implements OnInit {
 
-  constructor() { }
+  tourtypes: any;
+
+  constructor(private mtService: MyToursService) { }
 
   ngOnInit() {
+    this.getTourTypes();
+  }
+
+  getTourTypes() {
+    this.tourtypes = this.mtService.tourtypes;
   }
 
 }
