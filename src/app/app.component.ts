@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Platform } from '@ionic/angular';
+import { MyToursService } from './services/my-tours.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -22,5 +25,16 @@ export class AppComponent {
       icon: 'bus'
     }
   ];
-  constructor() { }
+  constructor(
+    private platform: Platform,
+    private mtService: MyToursService
+  ) {
+    this.initializeApp();
+  }
+
+  initializeApp() {
+    this.platform.ready().then(() => {
+      this.mtService.initialize();
+    });
+  }
 }

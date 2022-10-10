@@ -18,15 +18,17 @@ export class RegionsPage implements OnInit {
   }
 
   getRegions() {
-    this.mtService.getRegions().subscribe({
-      next: data => {
-        this.regions = data;
-        // console.log(data);  TODO:
-      },
-      error: err => {
-        console.error(err);
-      }
-    });
+
+    this.regions = this.mtService.regions;
+    // this.mtService.getRegions().subscribe({
+    //   next: data => {
+    //     this.regions = data;
+    //     // console.log(data);  TODO:
+    //   },
+    //   error: err => {
+    //     console.error(err);
+    //   }
+    // });
   }
 
 }
