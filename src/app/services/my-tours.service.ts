@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { FavoritesService } from './favorites.service';
 import * as _ from 'lodash';
 
 @Injectable({
@@ -13,7 +14,9 @@ export class MyToursService {
   public tourtypes: any;
   public tours: any;
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient,
+    private favService: FavoritesService) { }
 
   initialize() {
     this.getRegions().subscribe({
@@ -37,6 +40,7 @@ export class MyToursService {
     this.getTours().subscribe({
       next: data => {
         this.tours = _.sortBy(data, 'Title');
+        this.favService.initialize(this.tours);
       },
       error: err => {
         console.error(err);

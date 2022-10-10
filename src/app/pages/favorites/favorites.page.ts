@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FavoritesService } from 'src/app/services/favorites.service';
 
 @Component({
   selector: 'app-favorites',
@@ -7,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FavoritesPage implements OnInit {
 
-  tours = [
-    { ID: 1, Title: 'City walk' },
-    { ID: 2, Title: 'On the trails of Beethoven' },
-    { ID: 3, Title: 'Villa Hammerschmidt' }
-  ];
+  // tours = [
+  //   { ID: 1, Title: 'City walk' },
+  //   { ID: 2, Title: 'On the trails of Beethoven' },
+  //   { ID: 3, Title: 'Villa Hammerschmidt' }
+  // ];
 
-  constructor() { }
+  constructor(public favService: FavoritesService) { }
 
   ngOnInit() {
   }
