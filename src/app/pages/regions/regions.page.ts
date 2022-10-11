@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MyToursService } from 'src/app/services/my-tours.service';
+import * as _ from 'lodash';
 
 
 @Component({
@@ -20,15 +21,12 @@ export class RegionsPage implements OnInit {
   getRegions() {
 
     this.regions = this.mtService.regions;
-    // this.mtService.getRegions().subscribe({
-    //   next: data => {
-    //     this.regions = data;
-    //     // console.log(data);  TODO:
-    //   },
-    //   error: err => {
-    //     console.error(err);
-    //   }
-    // });
+
+    this.regions.forEach(region => {
+      const tours = _.filter(this.mtService.tours, ['Region', region.ID]);
+      region.count = tours.length;
+    });
+
   }
 
 }

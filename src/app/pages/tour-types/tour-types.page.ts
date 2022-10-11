@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as _ from 'lodash';
 import { MyToursService } from 'src/app/services/my-tours.service';
 
 @Component({
@@ -18,6 +19,11 @@ export class TourTypesPage implements OnInit {
 
   getTourTypes() {
     this.tourtypes = this.mtService.tourtypes;
+
+    this.tourtypes.forEach(tourtype => {
+      const tours = _.filter(this.mtService.tours, ['Tourtype', tourtype.ID]);
+      tourtype.count = tours.length;
+    });
   }
 
 }
