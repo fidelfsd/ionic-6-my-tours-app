@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import * as _ from 'lodash';
 import { MyToursService } from 'src/app/services/my-tours.service';
-import { ActionSheetController } from '@ionic/angular';
+import { ActionSheetController, AlertController } from '@ionic/angular';
 import { FavoritesService } from 'src/app/services/favorites.service';
 
 @Component({
@@ -19,7 +19,8 @@ export class DetailsPage implements OnInit {
     private activatedRoute: ActivatedRoute,
     private mtService: MyToursService,
     private actionSheetCtrl: ActionSheetController,
-    private favService: FavoritesService) { }
+    private favService: FavoritesService,
+    private alertCtrl: AlertController) { }
 
   ngOnInit() {
     const id = this.activatedRoute.snapshot.paramMap.get('id');
@@ -42,10 +43,10 @@ export class DetailsPage implements OnInit {
           role: (this.isFavorite) ? 'destructive' : '',
           handler: () => {
             if (this.isFavorite) {
-              this.favService.remove(this.tour);
-              this.isFavorite = false;
+              // this.favService.remove(this.tour);
+              // this.isFavorite = false;
 
-              //this.presentAlert()
+              this.presentAlert();
 
             } else {
               this.favService.add(this.tour);
@@ -60,6 +61,27 @@ export class DetailsPage implements OnInit {
       ],
     });
     await actionSheet.present();
+  }
+
+
+  async presentAlert() {
+    const alert = await this.alertCtrl.create({
+      header: 'Remove Favorite?',
+      message: 'Do you really want to remove this Favorite?',
+      buttons: [
+        {
+          text: 'No'
+        },
+        {
+          text: 'Yes',
+          handler: () => {
+            this.favService.remove(this.tour);
+            this.isFavorite = false;
+          }
+        }
+      ]
+    });
+    await alert.present();
   }
 
 }
