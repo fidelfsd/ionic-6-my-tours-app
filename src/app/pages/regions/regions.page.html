@@ -15,7 +15,11 @@
       Criteria: region.ID,
       Name: region.Name
      }]">
+
+      <ion-icon name="{{region.Icon}}" slot="start"></ion-icon>
+
       {{region.Name}}
+
 
       <ion-badge slot="end">{{region.count}}</ion-badge>
     </ion-item>

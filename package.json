@@ -10,7 +10,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "server": "json-server --watch ./server/my-tours.json --static ./server/public/ --port 3000"
+    "server": "json-server --watch ./server/my-tours.json --static ./server/public/ --delay 1000 --port 3000"
   },
   "private": true,
   "dependencies": {
