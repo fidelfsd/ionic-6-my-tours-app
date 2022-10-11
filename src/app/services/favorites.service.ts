@@ -35,7 +35,13 @@ export class FavoritesService {
   }
 
   remove(tour) {
-    // TODO: implementar
+    const removeIndex = this.favIDs.indexOf(tour.ID);
+    if (removeIndex !== -1) {
+      this.favIDs.splice(removeIndex, 1);
+      this.favTours.splice(removeIndex, 1);
+      window.localStorage.setItem(this.favKey, JSON.stringify(this.favIDs));
+
+    }
   }
 
 

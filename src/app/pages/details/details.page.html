@@ -9,7 +9,13 @@
 
 
 <ion-content class="ion-padding">
-  <ion-button routerLink="/request" routerDirection="forward">
+  <!-- <ion-button routerLink="/request" routerDirection="forward">
     Request a Tour
-  </ion-button>
+  </ion-button> -->
 </ion-content>
+
+<ion-footer>
+  <ion-button expand="block" (click)="presentActionSheet()">
+    Options
+  </ion-button>
+</ion-footer>

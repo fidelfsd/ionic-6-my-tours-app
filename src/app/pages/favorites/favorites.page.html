@@ -8,11 +8,8 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-  <!-- <ion-button routerLink="/details" routerDirection="forward">
-    Show details
-  </ion-button> -->
   <ion-list>
-    <ion-item *ngFor="let tour of favService.favTours" [routerLink]="['/details', tour]" routerDirection="forward">
+    <ion-item *ngFor="let tour of favService.favTours" [routerLink]="['/details', tour.ID]" routerDirection="forward">
       {{ tour.Title }}
     </ion-item>
 
