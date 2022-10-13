@@ -41,9 +41,6 @@ export class MyToursService {
     //   }
     // });
 
-
-
-
     await this.getTourTypes().toPromise()
       .then(data => this.tourtypes = _.sortBy(data, 'Name'))
       .catch(error => console.log(error));

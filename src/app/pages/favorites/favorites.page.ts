@@ -19,4 +19,8 @@ export class FavoritesPage implements OnInit {
   ngOnInit() {
   }
 
+  doReorder(ev) {
+    this.favService.reorder(ev);
+  }
+
 }

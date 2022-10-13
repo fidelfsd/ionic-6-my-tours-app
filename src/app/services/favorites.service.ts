@@ -44,5 +44,19 @@ export class FavoritesService {
     }
   }
 
+  reorder(ev) {
+    ev.detail.complete(this.favTours);
+    this.favIDs = this.favTours.map(tour => tour.ID);
+    this.addToStorage(this.favKey, this.favIDs);
+  }
+
+  protected addToStorage(key, value) {
+    window.localStorage.setItem(key, JSON.stringify(value));
+  }
+
+  protected getFromStorage(key) {
+    return JSON.parse(window.localStorage.getItem(key));
+  }
+
 
 }
