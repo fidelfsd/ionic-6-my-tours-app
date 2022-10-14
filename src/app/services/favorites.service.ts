@@ -26,7 +26,6 @@ export class FavoritesService {
     }
   }
 
-
   add(tour) {
     this.favIDs.push(tour.ID);
     this.favTours.push(tour);
