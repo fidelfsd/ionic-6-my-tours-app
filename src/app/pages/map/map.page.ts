@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Geolocation } from '@awesome-cordova-plugins/geolocation/ngx';
+import { ModalController } from '@ionic/angular';
 import * as L from 'leaflet';
 
 @Component({
@@ -9,7 +10,10 @@ import * as L from 'leaflet';
 })
 export class MapPage implements OnInit {
   map: L.Map;
-  constructor(private geolocation: Geolocation) {}
+  constructor(
+    private geolocation: Geolocation,
+    private modalCtrl: ModalController
+  ) {}
 
   ngOnInit() {
     this.geolocation
@@ -56,5 +60,9 @@ export class MapPage implements OnInit {
       .addTo(this.map)
       .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
       .openPopup();
+  }
+
+  close() {
+    this.modalCtrl.dismiss();
   }
 }

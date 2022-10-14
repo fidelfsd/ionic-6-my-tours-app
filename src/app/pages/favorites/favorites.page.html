@@ -9,12 +9,13 @@
 
 <ion-content class="ion-padding">
   <ion-list>
-
     <ion-reorder-group (ionItemReorder)="doReorder($event)" disabled="false">
-      <ion-item *ngFor="let tour of favService.favTours" [routerLink]="['/details', tour.ID]" routerDirection="forward">
-        <ion-label>
-          {{ tour.Title }}>
-        </ion-label>
+      <ion-item
+        *ngFor="let tour of favService.favTours"
+        [routerLink]="['/details', tour.ID]"
+        routerDirection="forward"
+      >
+        <ion-label> {{ tour.Title }} </ion-label>
         <ion-reorder slot="start"></ion-reorder>
       </ion-item>
     </ion-reorder-group>
@@ -23,5 +24,4 @@
       You didn't choose any favorites yet!
     </ion-item>
   </ion-list>
-
 </ion-content>
