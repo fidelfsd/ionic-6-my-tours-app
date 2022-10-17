@@ -7,10 +7,9 @@ import * as _ from 'lodash';
 import { LoadingController } from '@ionic/angular';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class MyToursService {
-
   public regions: any;
   public tourtypes: any;
   public tours: any;
@@ -18,77 +17,49 @@ export class MyToursService {
   constructor(
     private http: HttpClient,
     private favService: FavoritesService,
-    private loadingCtrl: LoadingController) { }
+    private loadingCtrl: LoadingController
+  ) {}
 
   async initialize() {
-
     const loading = await this.loadingCtrl.create({
       message: 'Loading tour data...',
-      spinner: 'crescent'
+      spinner: 'crescent',
     });
     await loading.present();
 
-    await this.getRegions().toPromise()
-      .then(data => this.regions = data)
-      .catch(error => console.log(error));
+    await this.getRegions()
+      .toPromise()
+      .then((data) => (this.regions = data))
+      .catch((error) => console.log(error));
 
-    // await this.getRegions().subscribe({
-    //   next: data => {
-    //     this.regions = data;
-    //   },
-    //   error: err => {
-    //     console.error(err);
-    //   }
-    // });
+    await this.getTourTypes()
+      .toPromise()
+      .then((data) => (this.tourtypes = _.sortBy(data, 'Name')))
+      .catch((error) => console.log(error));
 
-    await this.getTourTypes().toPromise()
-      .then(data => this.tourtypes = _.sortBy(data, 'Name'))
-      .catch(error => console.log(error));
-
-    // await this.getTourTypes().subscribe({
-    //   next: data => {
-    //     this.tourtypes = _.sortBy(data, 'Name');
-    //   },
-    //   error: err => {
-    //     console.error(err);
-    //   }
-    // });
-
-
-    await this.getTours().toPromise()
-      .then(data => {
+    await this.getTours()
+      .toPromise()
+      .then((data) => {
         this.tours = _.sortBy(data, 'Title');
         this.favService.initialize(this.tours);
       })
-      .catch(error => console.log(error));
-
-    // await this.getTours().subscribe({
-    //   next: data => {
-    //     this.tours = _.sortBy(data, 'Title');
-    //     this.favService.initialize(this.tours);
-    //   },
-    //   error: err => {
-    //     console.error(err);
-    //   }
-    // });
+      .catch((error) => console.log(error));
 
     await loading.dismiss();
-
   }
 
   getRegions(): Observable<any> {
-    const requestUrl = `${environment.baseUrl}/Regions`;
+    const requestUrl = `${environment.baseUrl}/Regions.json`;
     return this.http.get<any>(requestUrl);
   }
 
   getTourTypes(): Observable<any> {
-    const requestUrl = `${environment.baseUrl}/Tourtypes`;
+    const requestUrl = `${environment.baseUrl}/Tourtypes.json`;
     return this.http.get<any>(requestUrl);
   }
 
   getTours(): Observable<any> {
-    const requestUrl = `${environment.baseUrl}/Tours`;
+    const requestUrl = `${environment.baseUrl}/Tours.json`;
     return this.http.get<any>(requestUrl);
   }
-
 }

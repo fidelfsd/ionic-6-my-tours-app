@@ -5,8 +5,8 @@
 export const environment = {
   production: false,
 
-  baseUrl: 'http://localhost:3000',
-  baseImgUrl: 'http://localhost:3000/assets/img',
+  baseUrl: 'https://my-tours-app2-default-rtdb.firebaseio.com',
+  baseImgUrl: 'https://mytoursapp.000webhostapp.com/img',
   baseMarkerIconUrl: '../assets/markers',
 };
 
