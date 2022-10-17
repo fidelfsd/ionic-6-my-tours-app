@@ -6,7 +6,8 @@ export const environment = {
   production: false,
 
   baseUrl: 'http://localhost:3000',
-  baseImgUrl: 'http://localhost:3000/assets/img'
+  baseImgUrl: 'http://localhost:3000/assets/img',
+  baseMarkerIconUrl: '../assets/markers',
 };
 
 /*
